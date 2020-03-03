@@ -34,10 +34,11 @@ void loop() {
   button2 = digitalRead(decP1);
   button3 = digitalRead(incP2);
   button4 = digitalRead(decP2);
+  
   if(button1 == HIGH){
-    delay(200);
     P1Score++;
-    lcd.setCursor(0,1);
+    delay(200);
+    lcd.setCursor(1,1);
     lcd.print(P1Score);
   }
 
@@ -76,3 +77,4 @@ void loop() {
   }
   */
 }
+
